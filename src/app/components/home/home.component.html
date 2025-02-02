@@ -1,0 +1,13 @@
+<button (click)="toggleShowHiddenMessage()">Toggle Hidden Message</button>
+
+@if (showHiddenMessage) {
+<h1>{{hiddenMessage}}</h1>
+}
+
+@for (item of items; track item) {
+<p>{{item}}</p>
+}
+
+<button (click)="submit()">Submit</button>
+
+<h2>{{outsideData}}</h2>
